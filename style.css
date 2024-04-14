@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main_div{
+    background-color: #35488B;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around   ;
+}
+.div_left{
+    width: 400px;
+    height: 500px;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.heading_div{
+    width: 400px;
+    height: 70px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+
+}
+.heading_calculator{
+    font-size: 45px;
+    color: #35488B;
+}
+.image_div{
+    background-color: #DADCE0;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+
+}
+.image_div img{
+    width: 90%;
+    max-height: 87%;
+    border-radius: 10px;    
+}
+.div_right{
+    width: 400px;
+    height: 500px;
+    background-color:white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+
+}
+.right_main_div{
+    height: 450px;
+    width: 350px;
+    /* background-color: aqua; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.clender_heading_div{
+    width: 350px;
+    height: 80px;
+    background-color: #35488B;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.clender_img_div{
+    width: 100px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clender_img_div img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.age_heading_div{
+    width: 220px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.age_heading_div h1{
+    color: white;
+}
+.age_input_div{
+    width: 350px;
+    height: 80px;
+    background-color: #35488B;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.age_input_field_div{
+    /* background-color: black; */
+    width: 55%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.age_input_field{
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    /* color: white; */
+    font-size: 16px;
+}
+
+.calc_btn_div{
+    /* background-color: black; */
+    width: 35%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc_btn{
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+.calc_btn:hover{
+    background-color: #333;
+}
+.total_age_div{
+    width: 350px;
+    height: 80px;
+    background-color: #35488B;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.age_output_div{
+    width: 300px;
+    height: 100px;
+    /* background-color: #35488B; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.div1, .div2, .div3{
+    width: 80px;
+    height: 80px;
+    background-color: #DADCE0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Adjust the values as needed */
+
+}
+.age{
+    font-size: 45px;
+}
+.text_div{
+    width: 300px;
+    height: 40px;
+    /* background-color: #35488B; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -25px;
+}
+.div1_text, .div2_text, .div3_text{
+    width: 60px;
+    height: 40px;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text_div p{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .main_div{
+        flex-direction: column;
+    }
+    .div_right{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .div_left, .heading_div, .image_div, .div_right, .right_main_div, .clender_heading_div, .clender_img_div, .age_heading_div, .age_input_div, .age_input_field_div, .calc_btn_div, .total_age_div, .clender_img_div, .age_heading_div, .text_div, .div1_text, .div2_text, .div3_text {
+        width: 100%;
+    }
+    .age_heading_div h1{
+        font-size: 35px;
+    }
+
+    .heading_div{
+        margin-bottom: 10px;
+    }
+    .heading_calculator{
+        font-size: 30px;
+    }
+    .main_div{
+        padding: 10px;
+    }
+}
+
